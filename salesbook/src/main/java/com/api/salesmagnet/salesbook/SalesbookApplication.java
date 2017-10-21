@@ -1,4 +1,4 @@
-package com.api.salesmagnet.storekeeper;
+package com.api.salesmagnet.salesbook;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class StorekeeperApplication {
+public class SalesbookApplication {
 	
-	@RequestMapping("storekeeper/hello")
+	@RequestMapping("sales/hello")
     String hello() {
-        return "Hello Storekeeper!!";
+        return "Hello salesbook!!";
     }
 
 	public static void main(String[] args) {
-		SpringApplication.run(StorekeeperApplication.class, args);
+		SpringApplication.run(SalesbookApplication.class, args);
 	}
 }
