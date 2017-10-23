@@ -19,7 +19,7 @@ zuul:
       path: /order/**
       serviceId: order-service       
     referencedata: 
-      path: /referencedata/**
+      path: /reference/**
       serviceId: referencedata-service
     salesbook: 
       path: /sales/**
