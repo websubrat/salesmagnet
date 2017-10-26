@@ -34,6 +34,14 @@ zuul:
       path:/storekeeper/**
       serviceId:storekeeper-service
       
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+      
 eureka:
   client:
     serviceUrl:
