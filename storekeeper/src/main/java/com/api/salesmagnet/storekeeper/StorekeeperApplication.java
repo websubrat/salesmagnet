@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/storekeeper")
 public class StorekeeperApplication {
 	
-	@Value("$(message: Default hello)")
+	@Value("${message: Default hello}")
 	private String message;
 	
 	@RequestMapping("/hello")
